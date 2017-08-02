@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>579f0356babda5d9031959ad</title>
+    <link rel="stylesheet" type="text/css" href="./css/version1.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <script>
+        function loadLibrary() {
+            var libPath = "./../../Library/main/";
+            var extraPlugin = ["mobile_fibkeypad1.0"];
+            var libScript = document.createElement("script");
+            libScript.type = "text/javascript";
+            libScript.onerror = function() {
+                //alert("Error : library can't be initialize"); 
+            }
+            libScript.onload = function() {
+                var lib = new Library(libPath, extraPlugin);
+            }
+            document.getElementsByTagName("head")[0].appendChild(libScript);
+            libScript.src = libPath + 'Library.js';
+        }
+        document.addEventListener("DOMContentLoaded", loadLibrary);
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid" style="font-family:notosan;font-size:14">
+        <div class="preview-wrap">
+            <div class="row preview-container no-padding">
+                <div id="scoreArea">
+                  <div>
+                    <span class="displayscoremark"></span>
+                    /
+                    <span class="displaybasemark">5</span>
+                  </div>
+                </div>
+                <h1 id="nameexercise">Exercise Number</h1>
+                <div class="clearfix">
+                    <div class="col-md-6" style="background-color:#ffffff">
+                        <div class="numbering">
+                          Number1
+                        </div>
+                        <div class="questiontitle">
+                           Question1
+                        </div>
+                        <div class="lineDrawing"></div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="col-md-12" style="background-color:#ffffff">
+                       <div class="toolsarea">
+                          <ol class="mcqmulti" id="Q1uniqueID" name="pageID" answer="Q1answer">
+                            <li><span class="choicemcqmulti"></span> <a class="mcqmultifirst">Q1.1</a></li>
+                             <li class="resultmcqmulti">
+                                <div class="mcqmultisuggesttext"></div>
+                            </li>
+                        </ol>
+                        <div class="mcqmulti_feedback" id="fb_Q1uniqueID"><div class="fbheader"><span>Feedback Title</span></div><div class="fbparagraph">Feedback Paragraph</div></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="CheckMyAnsBtnCustom" id="pageID" type="image" value="images/checkanswerchinese.png" resertvalue="images/resetanswer_chinese.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

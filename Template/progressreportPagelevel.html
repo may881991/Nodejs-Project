@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="nojs html" lang="en-US">
+<meta charset="utf-8"> 
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<head>
+  <title>Version1 Template</title>
+  <link rel="stylesheet" type="text/css" href="./css/version1.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  <script type="text/javascript"></script>
+  <!--custom head HTML-->
+  <script type="text/javascript">
+  function loadLibrary(){
+    var libPath = "./../../Library/main/";
+    var extraPlugin = ["contentsreportPagelevel1.0"];
+    var libScript = document.createElement("script");
+     libScript.type = "text\/javascript";
+     libScript.onerror = function(){
+       //alert("Error : library can't be initialize");
+     }
+     libScript.onload=function(){
+           var lib =new Library(libPath,extraPlugin);
+     }
+     document.getElementsByTagName("head")[0].appendChild(libScript);
+     libScript.src=libPath+'Library.js';
+  }
+  document.addEventListener("DOMContentLoaded", loadLibrary);
+  </script>
+</head>
+<body>
+<div id="pageFrame" class="container-fluid pageContainer">
+  <div class="header-bar">
+    <p>进度报告 Progress Report</p>
+  </div>
+  <div class="contentContainer">
+    
+  </div>
+  <!-- <img src="./images/Coverpage.jpg" width="100%"> -->
+</div>
+</body>
+</html>

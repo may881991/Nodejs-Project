@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="nojs html" lang="en-US">
+<meta charset="utf-8"> 
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <title>Version1 Template</title>
+  <link rel="stylesheet" type="text/css" href="./css/version1.css">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  <script type="text/javascript"></script>
+  <!--custom head HTML-->
+  <script type="text/javascript">
+  function loadLibrary(){
+    var libPath = "./../../Library/main/";
+    var extraPlugin = ["mcq_multipleIB1.0"];
+    var libScript = document.createElement("script");
+     libScript.type = "text\/javascript";
+     libScript.onerror = function(){
+       //alert("Error : library can't be initialize");
+     }
+     libScript.onload=function(){
+           var lib =new Library(libPath,extraPlugin);
+     }
+     document.getElementsByTagName("head")[0].appendChild(libScript);
+     libScript.src=libPath+'Library.js';
+  }
+  document.addEventListener("DOMContentLoaded", loadLibrary);
+  </script>
+  <script src="./scripts/audio.min.js"></script>
+  <script>
+      audiojs.events.ready(function() {
+        audiojs.createAll();
+      });
+  </script>
+</head>
+<body>
+    <div id="pageFrame" class="container-fluid" style="font-family:notosan;font-size:14">
+       <div class="headerimg">
+         <div class="chlogo">
+          <img src="images/logo.png" />          
+        </div>
+        <div class="pwlogo">
+          <img src="images/pw_logo.png" />
+        </div>
+        </div>
+        <div class="preloader" style="padding: 50% 10% 70%;">
+          <img src="images/preloader.gif">        
+        </div>
+        <div class="pageBody">
+            <div class="">
+                <div id="scoreArea">
+                  <div>
+                    <span class="displayscoremark"></span>|<span class="displaybasemark">BaseMark</span>
+                  </div>
+                </div>
+                <!-- <h1 id="nameexercise">Exercise Number</h1> -->
+                <!-- <div class="titleBar">
+                  <p class="titletext">複選題</p>
+                </div> -->
+                <!-- Question-->
+                <div class="clearfix">
+                    <div class="col-md-12" style="background-color:#ffffff">
+                        <div class="numbering">
+                          Number1
+                        </div>
+                        <div class="questiontitle">Question1</div>
+                        <!--Paragraph-->
+                        <!-- <div class="lineDrawing"></div> -->
+                    </div>
+                </div>
+                <div class="clearfix1">
+                    <div class="col-md-12" style="background-color:#ffffff">
+                       <div class="toolsarea">
+                          <ol class="mcqmulti" id="Q1uniqueID" name="pageID" answer="Q1answer" choicelimit="1">
+                            <li><span class="choicemcqmulti"></span> <a class="mcqmultifirst">Q1.1</a></li>
+                             <li class="resultmcqmulti">
+                                <div class="mcqmultisuggesttext"></div>
+                            </li>
+                        </ol>
+                        <div class="mcqmulti_feedback" id="fb_Q1uniqueID"><div class="fbheader"><span>Feedback Title</span></div><div class="fbparagraph">Feedback Paragraph</div></div>
+                        <div class="IndividualmcqBtn" id="Q1uniqueID"></div>
+                      </div>
+                    </div>
+                </div>
+                 <!-- Question-->
+                <!-- <div class="clearfix">
+                    <div class="CheckMyAnsBtnCustom" id="pageID" type="image" value="images/check_answer_btn.png" resertvalue="images/reset_btn.png"></div>
+                </div> -->
+            </div>
+        </div>
+        <div class="footerimg">
+          <div class="pwlogo">
+            <img src="images/pw_logo.png" />            
+          </div>
+        </div>
+    </div>
+</body>
+
+</html>

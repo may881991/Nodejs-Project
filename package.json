@@ -1,0 +1,32 @@
+{
+  "name": "htmlfilegenerator",
+  "version": "1.0.0",
+  "productName": "Book Generator",
+  "description": "Text files from generate Book ",
+  "main": "app.html",
+  "author": "May <may.wytu@gmail.com>",
+  "license": "ISC",
+  "window": {
+    "icon": "icon.png",
+    "show": false,
+    "toolbar": true,
+    "width": 960,
+    "height": 750,
+    "position": "center"
+  },
+  "dependencies": {
+    "archiver": "^1.1.0",
+    "archiver-zip": "^0.1.0",
+    "async": "^2.1.2",
+    "async-foreach": "^0.1.3",
+    "cheerio": "^0.22.0",
+    "copy-dir": "^0.3.0",
+    "file-stat": "^1.0.0",
+    "fs-extra": "^0.30.0",
+    "is-utf8": "^0.2.1",
+    "md5": "^2.0.0",
+    "node-async-loop": "^1.2.2",
+    "readdir": "0.0.13",
+    "rimraf": "^2.5.4"
+  }
+}

@@ -1,0 +1,1195 @@
+/*Update 17.7.2017*/
+
+@font-face {
+    font-family: '__Noto Sans_5';
+    src: url('../fonts/notosans-regular-webfont.eot');
+    src: local('☺'), url('../fonts/notosans-regular-webfont.woff') format('woff'), url('../fonts/notosans-regular-webfont.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: '__Noto Sans_5';
+    src: url('../fonts/notosans-bold-webfont.eot');
+    src: local('☺'), url('../fonts/notosans-bold-webfont.woff') format('woff'), url('../fonts/notosans-bold-webfont.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KaiTi';
+    src: url('../fonts/KaiTi.woff');
+    src: local('☺'), url('../fonts/KaiTi.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Songti';
+    src: url('../fonts/Songti.woff');
+    src: local('☺'), url('../fonts/Songti.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+#pageFrame {
+    background: #FFFFFF url("../images/shattered_edited.jpg") repeat left top;
+}
+.titleBar {
+    width: 30%;
+    min-height: 40px;
+    border-color: #2A84BF;
+    background-color: #C5EFF7;
+    border-radius: 0px 0px 20px 0px;
+    color: #3FA9F5;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-family: "KaiTi";
+    font-weight: bold;
+    font-weight: 700;
+    margin-left: 1px;
+    margin-top: 49px;
+    position: relative;
+}
+.titletext {
+    padding: 7px 0px;
+}
+.bodytext {
+    margin-left: 73px;
+    margin-top: 63px;
+}
+.scoremark {
+    width: 38px;
+}
+.basemark {
+    width: 32px;
+}
+.quest {
+    margin-top: 47px;
+}
+.clearfix {
+    margin-left: 1%;
+}
+@media(max-width: 320px) and (min-width: 240px){
+   .chlogo{
+        width: 30%;
+        display: inline-block;
+        margin-top: 1%;
+    }
+    .mslogo{    
+        width: 35%;
+        float: right;
+        margin-top: 1%;
+    }
+    .pwlogo{    
+        width: 35%;
+        float: right;
+    }
+    .headerimg img,.footerimg img{
+        width: 100%;
+    }
+    .headerimg{
+        margin: 2% 0%;
+        display: inline-block;
+    }
+    .footerimg{
+        margin: 2% 0% 7%; 
+        display: inline-block;
+    }
+     .pageBody {
+        border-style: solid;
+        border-color: #3FA9F5;
+        background-color: #FFFFFF;
+        border-width: 4px 0px 0px;
+        margin: 5% 0%;
+    }
+    .container-fluid{
+        padding: 0px !important;
+    }
+    .audiojs {
+        width: 100%;
+        height: 36px;
+        background: #404040;
+        border-radius: 5px;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 12px;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+        background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
+        -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+    }
+    .audiojs .scrubber {
+        position: relative;
+        float: left;
+        width: 53%;
+        background: #5a5a5a;
+        height: 14px;
+        margin: 10px;
+        border-top: 1px solid #3f3f3f;
+        border-left: 0px;
+        border-bottom: 0px;
+        overflow: hidden;
+    }
+    .audiojs .play-pause {
+        width: 20px;
+        height: 40px;
+        padding: 4px 0px;
+        margin: 0px;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #000;
+    }
+    .audiojs .time{
+        float: left;
+        height: 28px;
+        line-height: 36px;
+        font-size: 11px;
+        width: 16%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        letter-spacing: -1.5px;
+        border-left: 1px solid #000;
+        color: #ddd;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+    .time em,.time strong{
+        padding: 0px !important;
+    }
+    .time em,.time strong{
+        padding: 0px !important;
+    }
+    .clearfix1 {
+        margin: 0 0 1% 1%;
+        display: inline-block;
+        width: 90%;
+    }
+    .clearfix3 {
+        margin-left: 2%;
+        margin-bottom: 1%;
+        color: #000;
+        line-height: 32px;
+        font-size: 21px;
+        text-indent: 0px;
+        font-family: '__Noto Sans_5';
+        font-weight: 400;
+    }
+    #scoreArea {
+        width: 30%;
+        min-height: 35px;
+        background-color: #3FA9F5;
+        border-radius: 10px;
+        padding: 2px 0px;
+        position: relative;
+        margin-left: 65%;
+        margin-top: 2%;
+        color: #FFFFFF;
+        line-height: 30px;
+        font-size: 20px;
+        text-align: center;
+        font-family: '__Noto Sans_5';
+        font-weight: 700;
+    }
+    #scoreArea span {
+        width: 25%;
+        display: inline-block;
+    }
+    .numbering {
+        display: inline-block;
+        height: 35px;
+        border-width: 0px;
+        border-color: transparent;
+        background-color: #3FA9F5;
+        border-radius: 30px;
+        color: #FFFFFF;
+        line-height: 2.2;
+        font-size: 15px;
+        text-indent: 9px;
+        font-family: '__Noto Sans_5';
+        font-weight: normal;
+        position: relative;
+        padding: 0px 10px 0px 0px;
+        width: 35px;
+        text-align: center;
+        float: left;
+    }
+    .questiontitle {
+        width: 80%;
+        background-color: transparent;
+        color: #000;
+        line-height: 28px;
+        font-size: 16px;
+        font-family: 'KaiTi';
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+    .questiontitle img{
+        width: 100%;
+    }
+    .paragraphborder {
+        font-weight: normal;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'KaiTi';
+        border: 2px solid #3FA9F5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 black;
+        color: #000;
+    }
+    .paragraph {
+        padding: 5px;
+        font-size: 16px;
+        text-align: justify;
+        font-family: 'KaiTi';
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.8;
+        color: #000;
+    }
+    .paragraphborder {
+        font-weight: normal;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'KaiTi';
+        border: 2px solid #3FA9F5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 black;
+        color: #000;
+    }
+    .paragraphIn {
+        font-size: 16px;
+        text-align: justify;
+        font-family: 'KaiTi';
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.8;
+    }
+    .lineDrawing {
+        width: 80%;
+        height: 3px;
+        border-color: #2ECC71;
+        background-color: #ddd;
+        margin-top: 10px;
+        position: relative;
+        margin-left: 50px;
+        display: block;
+    }
+    .toolsarea {
+        width: 107%;
+        border-width: 0px;
+        border-color: transparent;
+        background-color: transparent;
+        color: #000;
+        line-height: 34px;
+        font-size: 16px;
+        font-family: 'KaiTi';
+        font-weight: 400;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .toolsarea img{
+        width: 100%;
+    }
+    #nameexercise {
+        width: 90%;
+        min-height: 20px;
+        background-color: transparent;
+        color: #6C7A89;
+        font-size: 20px;
+        font-family: '__Noto Sans_5';
+        font-weight: normal;
+        margin-left: 20px;
+        position: relative;
+    }
+    .header {
+        font-size: 16px;
+        background-color: transparent;
+        line-height: 28px;
+        font-family: '__Noto Sans_5';
+        font-style: normal;
+        position: relative;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .imgt3 {
+        padding: 10px 20px 20px;
+    }
+    .paragraphIn img{
+        width: 100%;
+    }
+    .CheckMyAnsBtnCustom {
+        width: 25%;
+        margin-left: 40%;
+        margin-bottom: 30%;
+    }
+    .CheckMyAnsBtnCustom a img {
+        width: 100%;
+    }
+    .head {
+        background: #efefef;
+        margin-bottom: 20px;
+    }
+    .mcqmulti_feedback {
+        font-family: 'Songti';
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) and (min-width: 320px) {
+    .chlogo{
+        width: 30%;
+        display: inline-block;
+        margin-top: 1%;
+    }
+    .mslogo{    
+        width: 35%;
+        float: right;
+        margin-top: 1%;
+    }
+    .pwlogo{    
+        width: 40%;
+        float: right;
+    }
+    .headerimg img,.footerimg img{
+        width: 100%;
+    }
+    .headerimg{
+        margin: 2% 0%;
+        display: inline-block;
+    }
+    .footerimg{
+        margin: 2% 0% 7%;
+        display: inline-block;
+    }
+    .pageBody {
+        border-style: solid;
+        border-color: #3FA9F5;
+        background-color: #FFFFFF;
+        border-width: 4px 0px 0px;
+        margin: 5% 0% 5%;
+    }
+    .audiojs {
+        width: 100%;
+        height: 36px;
+        background: #404040;
+        border-radius: 5px;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 12px;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+        background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
+        -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+    }
+    .audiojs .scrubber {
+        position: relative;
+        float: left;
+        width: 60%;
+        background: #5a5a5a;
+        height: 14px;
+        margin: 10px;
+        border-top: 1px solid #3f3f3f;
+        border-left: 0px;
+        border-bottom: 0px;
+        overflow: hidden;
+    }
+    .audiojs .play-pause {
+        width: 20px;
+        height: 40px;
+        padding: 4px 0px;
+        margin: 0px;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #000;
+    }
+    .audiojs .time{
+        float: left;
+        height: 28px;
+        line-height: 36px;
+        font-size: 11px;
+        width: 23%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        letter-spacing: -1.5px;
+        border-left: 1px solid #000;
+        color: #ddd;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+    .time em,.time strong{
+        padding: 0px !important;
+    }
+    .clearfix1 {
+        margin: 0 0 1% 1%;
+        display: inline-block;
+        width: 90%;
+    }
+    .clearfix3 {
+        margin-left: 2%;
+        margin-bottom: 1%;
+        color: #000;
+        line-height: 32px;
+        font-size: 21px;
+        text-indent: 0px;
+        font-family: '__Noto Sans_5';
+        font-weight: 400;
+    }
+    #scoreArea {
+        width: 25%;
+        min-height: 35px;
+        background-color: #3FA9F5;
+        border-radius: 10px;
+        padding: 2px 0px;
+        position: relative;
+        margin-left: 65%;
+        margin-top: 2%;
+        color: #FFFFFF;
+        line-height: 30px;
+        font-size: 20px;
+        text-align: center;
+        font-family: '__Noto Sans_5';
+        font-weight: 700;
+    }
+    #scoreArea span {
+        width: 25%;
+        display: inline-block;
+    }
+    .paragraphIn img{
+        width: 100%;
+    }
+    .numbering {
+        display: inline-block;
+        height: 35px;
+        border-width: 0px;
+        border-color: transparent;
+        background-color: #3FA9F5;
+        border-radius: 30px;
+        color: #FFFFFF;
+        line-height: 2.2;
+        font-size: 15px;
+        text-indent: 9px;
+        font-family: '__Noto Sans_5';
+        font-weight: normal;
+        position: relative;
+        padding: 0px 10px 0px 0px;
+        width: 35px;
+        text-align: center;
+        float: left;
+    }
+    .questiontitle {
+        width: 80%;
+        background-color: transparent;
+        color: #000;
+        line-height: 28px;
+        font-size: 16px;
+        font-family: 'KaiTi';
+        margin-top: 5px;
+        margin-left: 40px;
+    }
+    .questiontitle img{
+        width: 100%;
+    }
+    .paragraphborder {
+        font-weight: normal;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'KaiTi';
+        border: 2px solid #3FA9F5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 black;
+        color: #000;
+    }
+    .paragraph {
+        padding: 5px;
+        font-size: 16px;
+        text-align: justify;
+        font-family: 'KaiTi';
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.8;
+        color: #000;
+    }
+    .paragraphborder {
+        font-weight: normal;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'KaiTi';
+        border: 2px solid #3FA9F5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 black;
+        color: #000;
+    }
+    .paragraphIn {
+        font-size: 16px;
+        text-align: justify;
+        font-family: 'KaiTi';
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.8;
+    }
+    .lineDrawing {
+        width: 80%;
+        height: 3px;
+        border-color: #2ECC71;
+        background-color: #ddd;
+        margin-top: 10px;
+        position: relative;
+        margin-left: 50px;
+        display: block;
+    }
+    .toolsarea {
+        width: 107%;
+        border-width: 0px;
+        border-color: transparent;
+        background-color: transparent;
+        color: #000;
+        line-height: 34px;
+        font-size: 16px;
+        font-family: 'KaiTi';
+        font-weight: 400;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .toolsarea img{
+        width: 100%;
+    }
+    #nameexercise {
+        width: 90%;
+        min-height: 20px;
+        background-color: transparent;
+        color: #6C7A89;
+        font-size: 20px;
+        font-family: '__Noto Sans_5';
+        font-weight: normal;
+        margin-left: 20px;
+        position: relative;
+    }
+    .header {
+        font-size: 16px;
+        background-color: transparent;
+        line-height: 28px;
+        font-family: '__Noto Sans_5';
+        font-style: normal;
+        position: relative;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .imgt3 {
+        padding: 10px 20px 20px;
+    }
+    .CheckMyAnsBtnCustom {
+        width: 25%;
+        margin-left: 40%;
+        margin-bottom: 30%;
+    }
+    .CheckMyAnsBtnCustom a img {
+        width: 100%;
+    }
+    .head {
+        background: #efefef;
+        margin-bottom: 20px;
+    }
+    .mcqmulti_feedback {
+        font-family: 'Songti';
+        font-size: 14px;
+    }
+}
+@media (max-width: 1240px) and (min-width: 780px) {
+    .pageBody {
+        width: 92%;
+        border-style: solid;
+        border-color: #3FA9F5;
+        background-color: #FFFFFF;
+        border-width: 4px 0px 0px;
+        margin: 5% 4%;
+    }
+    .chlogo{
+        width: 25%;
+        display: inline-block;
+    }
+    .mslogo{    
+        width: 20%;
+        float: right;
+        margin-top: 4%;
+    }
+    .pwlogo{    
+        width: 20%;
+        float: right;
+        margin-bottom: 6%;
+    }
+    .headerimg img,.footerimg img{
+        width: 100%;
+    }
+    .headerimg{
+        width: 92%;
+        margin: 0% 4%;
+        display: inline-block;
+    }
+    .footerimg{
+        width: 92%;
+        margin: 0% 4% 10%;
+        display: inline-block;
+    }
+}
+@media (min-width: 480px) and (max-width: 780px) {
+     .chlogo{
+        width: 20%;
+        display: inline-block;
+        margin-top: 3%;
+    }
+    .mslogo{    
+        width: 25%;
+        float: right;
+        margin-top: 2%;
+    }
+    .pwlogo{    
+        width: 25%;
+        float: right;
+        margin-top: 6%;
+    }
+    .headerimg img,.footerimg img{
+        width: 100%;
+    }
+    .headerimg{
+        width: 92%;
+        margin: 0% 4%;
+        display: inline-block;
+    }
+    .footerimg{
+        width: 92%;
+        margin: 0% 4% 6%;
+        display: inline-block;
+    }
+    .audiojs {
+        width: 90%;
+        height: 36px;
+        background: #404040;
+        border-radius: 5px;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 12px;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+        background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
+        -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .audiojs .scrubber {
+        position: relative;
+        float: left;
+        width: 68%;
+        background: #5a5a5a;
+        height: 14px;
+        margin: 10px;
+        border-top: 1px solid #3f3f3f;
+        border-left: 0px;
+        border-bottom: 0px;
+        overflow: hidden;
+    }
+    .audiojs .play-pause {
+        width: 20px;
+        height: 40px;
+        padding: 4px 0px;
+        margin: 0px;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #000;
+    }
+    .audiojs .time{
+        float: left;
+        height: 28px;
+        line-height: 36px;
+        font-size: 11px;
+        width: 20%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        letter-spacing: -1px;
+        border-left: 1px solid #000;
+        color: #ddd;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+    .clearfix1 {
+        margin-left: 8%;
+        display: inline-block;
+        width: 90%;
+    }
+    .clearfix3 {
+        margin-left: 4%;
+        margin-bottom: 1%;
+        color: #000;
+        line-height: 32px;
+        font-size: 21px;
+        text-indent: 0px;
+        font-family: 'KaiTi';
+        font-weight: bold;
+        font-weight: 400;
+    }
+    .container-fluid{
+        padding: 0px !important;
+    }
+    .pageBody {
+        width: 92%;
+        border-style: solid;
+        border-color: #3FA9F5;
+        background-color: #FFFFFF;
+        border-width: 4px 0px 0px;
+        margin: 2% 4%;
+    }
+    #scoreArea {
+        width: 25%;
+        min-height: 36px;
+        background-color: #3FA9F5;
+        border-radius: 10px;
+        padding: 10px 0px 17px;
+        position: relative;
+        margin-left: 70%;
+        margin-top: 2%;
+        color: #FFFFFF;
+        line-height: 32px;
+        font-size: 30px;
+        text-align: center;
+        font-family: '__Noto Sans_5';
+        font-weight: 700;
+    }
+    #scoreArea span {
+        width: 25%;
+        display: inline-block;
+    }
+    .numbering {
+        display: inline-block;
+        height: 45px;
+        border-width: 0px;
+        border-color: transparent;
+        background-color: #3FA9F5;
+        border-radius: 30px;
+        color: #FFFFFF;
+        line-height: 2;
+        font-size: 23px;
+        text-indent: 10px;
+        font-family: '__Noto Sans_5';
+        font-weight: normal;
+        position: relative;
+        padding: 0px 10px 0px 0px;
+        width: 45px;
+        text-align: center;
+        float: left;
+    }
+    .paragraphborder {
+        font-weight: normal;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'KaiTi';
+        border: 2px solid #3FA9F5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 black;
+        color: #000;
+    }
+    .paragraph {
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'KaiTi';
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.8;
+        color: #000;
+        margin-right: 30px;
+    }
+    .paragraphborderIn {
+        font-weight: normal;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'KaiTi';
+        border: 2px solid #3FA9F5;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 black;
+        color: #000;
+    }
+    .paragraphIn {
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'KaiTi';
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.8;
+        color: #000;
+        margin-left: 50px;
+    }
+    .questiontitle {
+        width: 80%;
+        background-color: transparent;
+        color: #000;
+        line-height: 2;
+        font-size: 22px;
+        font-family: 'KaiTi';
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+    .questiontitle img{
+        width: 100%;
+    }
+    .lineDrawing {
+        width: 90%;
+        height: 4px;
+        border-color: #2ECC71;
+        background-color: #ECF0F1;
+        margin-left: 65px;
+        margin-top: 19px;
+        position: relative;
+        display: block;
+    }
+    .toolsarea {
+        width: 97%;
+        border-width: 0px;
+        border-color: transparent;
+        background-color: transparent;
+        color: #000;
+        line-height: 34px;
+        font-size: 22px;
+        font-family: 'KaiTi';
+        font-weight: 400;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .toolsarea img{
+        width: 100%;
+    }
+    #nameexercise {
+        width: 90%;
+        min-height: 52px;
+        background-color: transparent;
+        color: #6C7A89;
+        line-height: 43px;
+        font-size: 30px;
+        font-family: '__Noto Sans_5';
+        font-weight: normal;
+        margin-left: 24px;
+        position: relative;
+    }
+    .head {
+        background: #efefef;
+        margin-bottom: 20px;
+    }
+    .paragraphIn img{
+        width: 100%;
+    }
+    .CheckMyAnsBtnCustom {
+        width: 18%;
+        margin-left: 40%;
+    }
+    .CheckMyAnsBtnCustom a img {
+        width: 100%;
+    }
+    .mcqmulti_feedback {
+        font-family: 'Songti';
+        font-size: 16px;
+    }
+}
+@media (min-width: 780px) {
+     .chlogo{
+        width: 18%;
+        display: inline-block;
+        margin-top: 3%;
+    }
+    .mslogo{    
+        width: 22%;
+        float: right;
+        margin-top: 2%;
+    }
+    .pwlogo{    
+        width: 20%;
+        float: right;
+        margin-bottom: 3%;
+    }
+    .headerimg img,.footerimg img{
+        width: 100%;
+    }
+    .headerimg{
+        width: 92%;
+        margin: 0% 4%;
+    }
+    .footerimg{
+        width: 92%;
+        margin: 3% 4% 3%;
+    }
+    .pageBody {
+        width: 92%;
+        border-style: solid;
+        border-color: #3FA9F5;
+        background-color: #FFFFFF;
+        border-width: 4px 0px 0px;
+        margin: 2% 4%;
+    }
+    .audiojs {
+        width: 460px;
+        height: 36px;
+        border-radius: 5px;
+        background: #404040;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 12px;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+        background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
+        -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        margin-left: 50px;
+    }
+    .audiojs .play-pause {
+        width: 20px;
+        height: 40px;
+        padding: 4px 0px;
+        margin: 0px;
+        float: left;
+        overflow: hidden;
+        border-right: 1px solid #000;
+    }
+    .audiojs .scrubber {
+        position: relative;
+        float: left;
+        width: 300px;
+        background: #5a5a5a;
+        height: 14px;
+        margin: 10px;
+        border-top: 1px solid #3f3f3f; 
+        border-left: 0px;
+        border-bottom: 0px;
+        overflow: hidden;
+    }
+    .audiojs .time{
+        letter-spacing: -1px;
+    }
+    .clearfix1 {
+        margin-left: 7%;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        display: inline-block;
+        width: 90%;
+    }
+    .clearfix3 {
+        margin-left: 6%;
+        margin-bottom: 1%;
+        color: #000;
+        line-height: 32px;
+        font-size: 21px;
+        text-indent: 0px;
+        font-family: 'KaiTi';
+        font-weight: 400;
+    }
+    #scoreArea {
+        width: 20%;
+        height: 57px;
+        background-color: #3FA9F5;
+        border-radius: 10px;
+        padding: 10px 0px;
+        position: relative;
+        margin-left: 77%;
+        margin-top: 2%;
+        color: #FFFFFF;
+        line-height: 32px;
+        font-size: 35px;
+        text-align: center;
+        font-family: '__Noto Sans_5';
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    #scoreArea span {
+        width: 25%;
+        display: inline-block;
+    }
+    .numbering {
+        display: inline-block;
+        height: 45px;
+        border-width: 0px;
+        border-color: transparent;
+        background-color: #3FA9F5;
+        border-radius: 32px;
+        color: #FFFFFF;
+        line-height: 2.2;
+        font-size: 20px;
+        text-indent: 10px;
+        font-family: '__Noto Sans_5';
+        font-weight: normal;
+        position: relative;
+        padding: 0px 10px 0px 0px;
+        width: 45px;
+        text-align: center;
+        float: left;
+    }
+    .questiontitle {
+        width: 90%;
+        background-color: transparent;
+        color: #000;
+        line-height: 28px;
+        font-size: 25px;
+        font-family: 'KaiTi';
+        margin-top: 5px;
+        margin-left: 60px;
+        margin-bottom: 10px;
+    }
+    .questionImg {
+        margin-top: -6px !important;
+    }
+    .lineDrawing {
+        width: 91%;
+        height: 4px;
+        border-color: #2ECC71;
+        background-color: #ddd;
+        margin-left: 65px;
+        margin-top: 19px;
+        position: relative;
+        display: block;
+    }
+    .toolsarea {
+        width: 97%;
+        border-width: 0px;
+        border-color: transparent;
+        background-color: transparent;
+        color: #000;
+        line-height: 34px;
+        font-size: 22px;
+        font-family: 'KaiTi';
+        font-weight: 400;
+        position: relative;
+    }
+   /* .toolsarea img{
+        width: 100%;
+    }*/
+    .paragraph {
+        padding: 10px;
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'KaiTi';
+        margin: 10px;
+        line-height: 1.8;
+    }
+    .paragraphIn {
+        font-size: 25px;
+        text-align: justify;
+        font-family: 'KaiTi';
+        margin: 10px 10px 10px 60px;
+        line-height: 1.8;
+    }
+    .paragraphborder {
+        font-weight: normal;
+        padding: 13px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'KaiTi';
+        border: 2px solid #3FA9F5;
+        margin: 10px 10px 30px 20px;
+    }
+    .paragraphborderIn {
+        font-weight: normal;
+        padding: 13px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+        font-family: 'KaiTi';
+        border: 2px solid #3FA9F5;
+        margin: 10px 10px 10px 60px;
+    }
+    #nameexercise {
+        width: 90%;
+        min-height: 52px;
+        background-color: transparent;
+        color: #6C7A89;
+        line-height: 43px;
+        font-size: 30px;
+        font-family: '__Noto Sans_5';
+        font-weight: normal;
+        margin-left: 24px;
+        position: relative;
+    }
+    .mcqmulti_feedback {
+        font-family: 'Songti';
+        font-size: 20px;
+    }
+    .CheckMyAnsBtnCustom {
+        width: 18%;
+        margin-left: 40%;
+    }
+    .CheckMyAnsBtnCustom a img {
+        width: 100%;
+    }
+    .head {
+        background: #efefef;
+        margin-bottom: 20px;
+    }
+    .header {
+        padding: 10px;
+        font-size: 20px;
+        width: 98%;
+        background-color: transparent;
+        line-height: 28px;
+        font-family: 'KaiTi';
+        font-style: normal;
+        position: relative;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .imgt3 {
+        padding: 10px 20px 20px;
+    }
+    .audio {
+        width: 480px;
+        margin-top: 10px;
+        display: block;
+        padding-left: 15px;
+    }
+    .removespace {
+        margin-bottom: 20px;
+    }
+    .clearfix .questiontitle img {
+        margin: 0px;
+    }
+}
+.clearfix2 {
+    width: 90%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #E5E8E8;
+    background-color: transparent;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    padding: 1%;
+    line-height: 33px;
+    text-align: justify;
+    color: #000;
+    font-size: 21px;
+    font-family: 'KaiTi';
+    font-weight: 400;
+}

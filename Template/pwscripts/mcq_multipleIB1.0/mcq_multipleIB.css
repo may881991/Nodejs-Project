@@ -1,0 +1,257 @@
+/*----18.5.2017 ----*/
+
+    ol.mcqmulti{
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    .mcqmulti li a{  
+        color: #000;
+        padding: 0px 5px;
+        line-height: 1.2;
+    }
+    .mcqmulti li a{
+        width: 90%;
+        display: inline-block;
+    }
+    .mcqmulti li a:hover{
+        text-decoration: none;
+    }
+    .mcqmulti li{
+        padding: 8px 5px;
+        list-style: none;
+        min-height: 45px;
+        margin-bottom: 1%;
+        line-height: 1.8;
+    }
+    .mcqmulti li .choicemcqmulti{
+        left: 6px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        line-height: 30px;
+        border: 5px solid #50BEFD;
+        border-radius: 50%;
+        color: #f5f5f5;
+        text-align: center;
+        text-decoration: none;
+        background: #fff;
+        box-shadow: 0 0 3px gray;
+        font-size: 20px;
+        font-weight: bold;
+        vertical-align: top;
+        margin-top: 3px;
+        margin-left: 5px;
+    }
+    .hlmcqmulti {
+        border: 5px solid #fff !important;
+        background: #8ACFF9 !important;
+    }
+    .mcqhighlight{
+        padding: 5px;
+        border-radius: 7px;
+        color: white;
+        background: #196283;
+    }
+    .mcqhighlight > a ,.mcqmulticorrect > a,.mcqmultiincorrect > a{
+        color: #fff !important;
+        border: none;
+    }
+    .mcqmultifirst img{
+      border: none;
+      padding: 0px;
+      margin: -5px 0px 0px 0px;
+    }
+    .nochoicemcqmulti > .resultmcqmulti,.nochoicemcqmultieng > .resultmcqmulti{
+        background-color: gray;
+        padding: 1%;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #fff;
+        left: 10px;
+        line-height: 3;
+        display: block !important;
+        width: 100%;
+    }
+    .resultmcqmulti,.nochoicemcqmulti > .resultmcqmulti > .mcqmultisuggesttext,.nochoicemcqmultieng > .resultmcqmulti > .mcqmultisuggesttext {
+        display: none;
+    }
+    .mcqmulticorrect {
+        background: #47a13b;
+        border-radius: 7px;
+        overflow: auto;
+        width: 100%;
+    }
+    .mcqmulticorrectans {
+        width: 100%;
+        overflow: auto;
+    }
+    .mcqmultiincorrect {
+        background: #ff5350;
+        border-radius: 7px;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .pccorrectans {
+        left: 6px;
+        display: inline-block;
+        width: 37px;
+        height: 35px;
+        line-height: 30px;
+        border-radius: 50%;
+        background: white !important;
+        text-align: center !important;
+        text-decoration: none;
+        font-weight: bold;
+        vertical-align: middle;
+        padding: 0px 5px;
+    }
+    .mcqmulti_feedback{
+      margin-bottom: 10px;
+    }
+    
+    .nochoicemcqmulti > .resultmcqmulti:after {
+        content: '" 没有选择答案 ."';
+        font-family: "Kaiti";
+    }
+    .nochoicemcqmultieng > .resultmcqmulti:after {
+        content: '" You have not chosen any answer. Please choose one answer in Multiple Choice. "';
+    }
+    .multifbtext{
+        display: none;
+    }
+    .fbheader{
+        border: 2px solid #50BEFD;
+        color: #50BEFD;
+        padding: 5px;
+        border-radius: 8px;
+        cursor: pointer;
+        display: none;
+        font-family: "Kaiti";
+    }
+    .fbheader span{
+        border-bottom: 1px solid;
+        margin: 0px 5px 5px;
+    }
+    .fbparagraph{
+        display: none;
+        background: #50BEFD;
+        padding: 5px;
+        margin-bottom: 15px;
+        color: #fff;
+        border-radius: 8px;
+    }
+    .suggesttext{
+      color: #666;
+      padding: 1%;
+      font-weight: bold;
+      left: 10px;
+      display: inline-block;
+  }
+  .show_fb{
+      left: 10px;
+      font-style: italic;
+      color: #fff !important;
+      margin-bottom: 5px;
+      padding: 1%;
+      background-color: orange;
+      border-radius: 5px 5px 5px 5px
+  }
+  .mcqmulticorrect .pccorrect,.mcqmultiincorrect .pcincorrect {
+      left: 6px;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      line-height: 20px;
+      border: 5px solid white;
+      border-radius: 50%;
+      background: white!important;
+      text-align: center!important;
+      text-decoration: none;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+
+    .dismcqpgame{
+        pointer-events: none;
+        cursor: default;
+        opacity: 1;
+    }
+     @font-face {
+      font-family: 'Glyphicons Halflings';
+
+      src: url('fonts/glyphicons-halflings-regular.eot');
+      src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+    }
+    .mcqmulticorrectans .glyphicon-ok:before {
+      color: #47a13b;
+      content: "\e013";
+    }
+    .glyphicon {
+      position: relative;
+      display: inline-block;
+      font-family: 'Glyphicons Halflings';
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .glyphicon-ok:before {
+      color : #fff;
+      content: "\e013";
+    }
+    .glyphicon-remove:before {
+      color : #fff;
+      content: "\e014";
+    }
+    
+    @media (min-width: 480px) and (max-width: 780px) {
+        .mcqmulti li a{
+            width: 80%;
+            display: inline-block;
+        }
+    }
+    @media (max-width: 480px) and (min-width: 240px){
+        .mcqmulti li{
+            padding: 5px;
+        }
+        .mcqmulti li a {
+            width: 77%;
+        }
+        .mcqmulti li .choicemcqmulti{
+            left: 6px;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            line-height: 28px;
+            border: 3px solid #50BEFD;
+            border-radius: 50%;
+            color: #f5f5f5;
+            text-align: center;
+            text-decoration: none;
+            background: #fff;
+            box-shadow: 0 0 3px gray;
+            font-size: 20px;
+            font-weight: bold;
+            vertical-align: top;
+            margin-top: 1.5%;
+        }
+        .hlmcqmulti {
+            border: 3px solid #fff !important;
+            background: #8ACFF9 !important;
+        }
+        .mcqmulticorrect .pccorrect, .mcqmultiincorrect .pcincorrect{     
+            width: 25px;
+            height: 25px;
+            line-height: 1;
+        }
+        .pccorrectans {
+            width: 30px;
+            height: 30px;
+        }
+
+    }

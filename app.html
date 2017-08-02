@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MS Question Book Generator</title>
+	<link rel="stylesheet" href="assets/css/app.css">
+	<script src="assets/scripts/jquery-1.10.2.js"></script>
+	<script src="assets/scripts/setting.js"></script>
+	<script src="assets/scripts/require.js"></script>
+    <script>
+        requirejs(['assets/scripts/app'], function (app) {});
+    </script>
+	
+</head>
+<body>
+	<div class="phrasesample" id="1">
+		<span class="descriptionsample">Getting Path</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="phrasesample" id="2">
+		<span class="descriptionsample">Creating WorkingDirectory</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="phrasesample" id="3">
+		<span class="descriptionsample">Reading Text from File No. </span><span id="nametxt">1</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+		<div class="UTF8Issue">File is not in the UTF8 format.</div>
+	</div>
+	<div class="phrasesample" id="4">
+		<span class="descriptionsample">Copying necessary files</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="phrasesample" id="5">
+		<span class="descriptionsample">Cover Page Generating</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="phrasesample" id="51">
+		<span class="descriptionsample">Progress Report Page Generating</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="phrasesample" id="6">
+		<span class="descriptionsample">Generating Contents.db</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="phrasesample" id="6a">
+		<span class="descriptionsample">Generating MarkExercise.db</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="phrasesample" id="6b">
+		<span class="descriptionsample">Generating Search.db</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="phrasesample" id="7">
+		<span class="descriptionsample">Zipping the book files</span>
+		<span class="statussample">Done!</span>
+		<span class="preloaderImage"></span>
+		<div class="ErrorRerun">CMD + R to rerun the app</div>
+	</div>
+	<div class="" id="success">
+		<span class="successsample">Your book is now completely generated .
+		<div class="zipping"> Please see in the directory .. <span id="zipDir"></span></div></span>
+
+	</div>
+	<div id="showLog">
+        <input style="display:none;" type="file" id="fileDialog" nwworkingdir="" nwdirectory class="one" />
+        <input style="display:none;" type="file" id="fileServer" nwworkingdir="" nwdirectory />
+    </div>
+</body>
+
+</html>

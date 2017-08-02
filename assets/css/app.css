@@ -1,0 +1,75 @@
+body{
+    background: #FFF0B7;
+    font-family: "Noto_Sans";
+    height: 100%;
+}
+/* codystar-regular - latin */
+@font-face {
+  font-family: 'Noto_Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/notosans-regular-webfont.eot'); /* IE9 Compat Modes */
+  src: local('Noto_Sans'),
+       url('../fonts/notosans-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/notosans-regular-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/notosans-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/notosans-regular-webfont.svg#noto_sansregular') format('svg'); /* Legacy iOS */
+}
+
+li.noselection::selection {
+    background-color: transparent;
+}
+.phrasesample{
+  width: 96%;
+  border: 1px dotted #A9A2A2;
+  line-height: 150%;
+  padding: 1%;
+  border-radius: 5px;
+  margin: 1%;
+  font-size: 16px;
+  display: none;
+}
+.descriptionsample{}
+.statussample{
+  float: right;
+  display: none;
+}
+.activeSucceed{
+  background-color: #FFFFE7;
+}
+.activeFail{
+  background-color: #FCDCDA;
+}
+.preloaderImage{
+  /*background-image: url("./../icons/comment.gif");*/
+  content:url("./../icons/comment.gif");
+  position: absolute;
+  margin-top: -3.5%;
+  width: 10%;
+  right: 0%;
+}
+.ErrorRerun{
+  color: rgb(234, 99, 40);
+  font-size: 11px;
+  float: right;
+  padding-right: 1%;
+  display: none;
+}
+.UTF8Issue{
+  color: red;
+  font-size: 15px;
+  display: none;
+  text-align: center;
+}
+#success{
+  color: green;
+  font-size: 19px;
+  text-align: center;
+  display: none;
+  padding: 11px 0px;
+}
+.zipping{
+  color: #000;
+  font-size: 19px;
+  padding: 20px 0px;
+}
